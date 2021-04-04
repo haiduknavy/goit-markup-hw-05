@@ -311,11 +311,12 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 370px;
   height: 70px;
   margin-bottom: 0;
-  padding-bottom: 27px;
-  padding-top: 27px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -378,7 +379,8 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .social-icon {
   width: 20px;
@@ -389,7 +391,8 @@ body {
 .social-link:hover {
   background-color: var(--hover-focus-color);
   color: var(--main-color);
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 .our-clients {
   padding-top: 94px;
@@ -416,8 +419,7 @@ body {
   align-items: center;
   color: var(--icon-color);
   transition: color 250ms var(--timing-function),
-    border 250ms var(--timing-function),
-    border-radius 250ms var(--timing-function);
+    border 250ms var(--timing-function);
 }
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
@@ -457,7 +459,7 @@ body {
   font-size: 16px;
   line-height: 1.625;
   transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .portfolio-card {
   width: 370px;
@@ -514,6 +516,7 @@ body {
 .portfolio-card .link {
   display: inline-block;
   position: relative;
+  transition: box-shadow 250ms var(--timing-function);
 }
 .portfolio-card .link:focus,
 .portfolio-card .link:hover {
@@ -559,6 +562,7 @@ body {
   background-color: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms var(--timing-function);
 }
 .link-nav:hover,
 .link-nav:focus,
